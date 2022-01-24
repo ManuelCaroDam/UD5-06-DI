@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:app_login_path/formulario.dart';
 import 'package:app_login_path/sign_In.dart';
 import 'package:flutter/material.dart';
@@ -39,10 +41,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
-    final TextStyle textStyleDefault = TextStyle(
-        color: Colors.white, fontSize: 14.0, fontWeight: FontWeight.bold);
 
     return Scaffold(
       body: Center(
@@ -57,7 +55,7 @@ Card miCard(BuildContext context) {
     
   
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-    margin: EdgeInsets.all(40),
+    margin: const EdgeInsets.all(40),
     
     elevation: 10,
     child: Column(
@@ -68,9 +66,9 @@ Card miCard(BuildContext context) {
 
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: const [
 
-            const Image(
+            Image(
             image: NetworkImage('https://image.freepik.com/vector-gratis/administradores-sistemas-o-administradores-sistemas-estan-dando-servicio-racks-servidores-administracion-sistemas-mantenimiento-configuracion-sistemas-informaticos-concepto-redes-paleta-azul-coral-rosado-ilustracion-vectorial_335657-1642.jpg'),
             ),
           ]
@@ -82,9 +80,9 @@ Card miCard(BuildContext context) {
             const Text(''),
 
             Column(
-              children: [
-                const Text('Discover your' , style: const TextStyle(fontWeight: FontWeight.bold ) ),
-                const Text ('Dream job Here', style: const TextStyle(fontWeight: FontWeight.bold )),
+              children: const [
+                Text('Discover your' , style: TextStyle(fontWeight: FontWeight.bold ) ),
+                Text ('Dream job Here', style: TextStyle(fontWeight: FontWeight.bold )),
               ],
             ),
 
@@ -93,9 +91,9 @@ Card miCard(BuildContext context) {
             const Text(''),
 
             Column(
-              children: [
-                const Text('Explore alt the most exiting jobs roles'),
-                const Text('Based on your interest. And study major'),
+              children: const [
+                Text('Explore alt the most exiting jobs roles'),
+                Text('Based on your interest. And study major'),
               ],
             ),
             

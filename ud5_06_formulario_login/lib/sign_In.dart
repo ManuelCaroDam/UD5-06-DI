@@ -1,3 +1,4 @@
+
 import 'package:app_login_path/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class SignIn extends StatelessWidget {
             const Text(''),
             const Text(''),
 
-            const Text('Hello Again!' , style: const TextStyle(fontWeight: FontWeight.bold ) ),
+            const Text('Hello Again!' , style: TextStyle(fontWeight: FontWeight.bold ) ),
             const Text(''),
             const Text('Wellcome back you`ve'),
             const Text('been missed!'),
